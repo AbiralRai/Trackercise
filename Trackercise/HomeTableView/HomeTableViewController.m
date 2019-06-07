@@ -20,6 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.ref = [[FIRDatabase database] reference];
+    
+    [self.ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *usersDict = snapshot.value;
+                NSLog(@"Information : %@",[usersDict valueForKeyPath:@"Programs.child.name"]);
+        
+//        for(NSString* key in usersDict) {
+//            id value = [usersDict objectForKey:key];
+//            NSLog(@"VALue = %@", value );
+//            NSLog(@"KEY = %@", key);
+//
+//        }
+        
+        
+    }];
     
     
     getTitle = [NSMutableArray arrayWithArray:@[@"Program 1",@"Program 2"]];
@@ -67,6 +82,17 @@
         NSArray *textfields = alertcontroller.textFields;
         UITextField *titleInput = textfields[0];
         UITextField *durationInput = textfields[1];
+        
+        NSDictionary *program = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 titleInput.text, @"name",
+                                 durationInput.text, @"duration",
+                                 nil];
+        FIRDatabaseReference *programReference = [self.ref child: @"Programs"];
+        
+        FIRDatabaseReference *newProgramReference = [programReference childByAutoId];
+        
+        [newProgramReference setValue: program];
+        
 
         [self->title addObject:titleInput.text];
         [self->duration addObject:durationInput.text];

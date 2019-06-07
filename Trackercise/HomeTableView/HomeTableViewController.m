@@ -9,6 +9,7 @@
 #import "HomeTableViewController.h"
 #import "HomeTableViewCell.h"
 #import "DetailViewController.h"
+#import "Plist.h"
 
 @interface HomeTableViewController () <UIAlertViewDelegate>
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    
     getTitle = [NSMutableArray arrayWithArray:@[@"Program 1",@"Program 2"]];
     getDuration = [NSMutableArray arrayWithArray:@[@"3Days/Week",@"4Days/Week"]];
 

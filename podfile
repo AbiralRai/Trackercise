@@ -8,8 +8,11 @@ target 'Trackercise' do
   # use_frameworks!
 
   # Pods for Trackercise
-pod 'FSCalendar'
-pod "MWPhotoBrowser"
+  pod 'FSCalendar'
+  pod "MWPhotoBrowser"
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+
   target 'TrackerciseTests' do
     inherit! :search_paths
     # Pods for testing

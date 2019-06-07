@@ -41,6 +41,8 @@
 		D2CB0DC3227B08BB004E097F /* TrackerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB0DC2227B08BB004E097F /* TrackerciseUITests.m */; };
 		D2D2346222A9E4F60034302E /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2346122A9E4F60034302E /* FSCalendar.framework */; };
 		D2D2346622A9E5090034302E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2346522A9E5090034302E /* SDWebImage.framework */; };
+		D2D2346A22AA0AC40034302E /* Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D2346922AA0AC40034302E /* Plist.m */; };
+		D2D2346E22AA1A9D0034302E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,9 @@
 		D2CB0DC4227B08BB004E097F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D2346122A9E4F60034302E /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D2346522A9E5090034302E /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D2346822AA0AC40034302E /* Plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plist.h; sourceTree = "<group>"; };
+		D2D2346922AA0AC40034302E /* Plist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plist.m; sourceTree = "<group>"; };
+		D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +274,8 @@
 				D24C5FD12288F7F600BECD1E /* HomeTableViewController.m */,
 				D24C5FCD2288F7E200BECD1E /* HomeTableViewCell.h */,
 				D24C5FCE2288F7E200BECD1E /* HomeTableViewCell.m */,
+				D2D2346822AA0AC40034302E /* Plist.h */,
+				D2D2346922AA0AC40034302E /* Plist.m */,
 			);
 			path = HomeTableView;
 			sourceTree = "<group>";
@@ -310,6 +317,7 @@
 				D228ECAA228CDF8D0058BC65 /* Assets.xcassets */,
 				D2CB0DA9227B08BB004E097F /* LaunchScreen.storyboard */,
 				D2CB0DAC227B08BB004E097F /* Info.plist */,
+				D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */,
 				D2CB0DAD227B08BB004E097F /* main.m */,
 				D228ED70228D87160058BC65 /* Charts.xcodeproj */,
 			);
@@ -475,6 +483,7 @@
 				D228EDD9228ED9E40058BC65 /* image3.jpg in Resources */,
 				D228EDD8228ED9E40058BC65 /* image2.jpg in Resources */,
 				D228EDD0228ED9E40058BC65 /* dotActive@3x.png in Resources */,
+				D2D2346E22AA1A9D0034302E /* GoogleService-Info.plist in Resources */,
 				D228EDD4228ED9E40058BC65 /* image4.jpg in Resources */,
 				D228EDD5228ED9E40058BC65 /* image5.jpg in Resources */,
 				D228EDD3228ED9E40058BC65 /* image6.jpg in Resources */,
@@ -600,8 +609,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Trackercise/Pods-Trackercise-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -609,8 +621,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -636,6 +651,7 @@
 				D2CB0DA0227B08B8004E097F /* AppDelegate.m in Sources */,
 				D24C5FD22288F7F600BECD1E /* HomeTableViewController.m in Sources */,
 				D228ECBA228CF5790058BC65 /* TutorialViewController.m in Sources */,
+				D2D2346A22AA0AC40034302E /* Plist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

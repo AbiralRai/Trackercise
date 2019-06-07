@@ -1,0 +1,29 @@
+
+ platform :ios, '9.0'
+
+use_frameworks!
+
+target 'Trackercise' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Trackercise
+pod 'FSCalendar'
+pod "MWPhotoBrowser"
+  target 'TrackerciseTests' do
+    inherit! :search_paths
+    # Pods for testing
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
+  end
+
+  target 'TrackerciseUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -20,33 +20,76 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.ref = [[FIRDatabase database] reference];
+//    self.ref = [[FIRDatabase database] reference];
     
-    [self.ref observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        NSDictionary *usersDict = snapshot.value;
-                NSLog(@"Information : %@",[usersDict valueForKeyPath:@"Programs.child.name"]);
-        
-//        for(NSString* key in usersDict) {
-//            id value = [usersDict objectForKey:key];
-//            NSLog(@"VALue = %@", value );
-//            NSLog(@"KEY = %@", key);
+//    NSArray *test = @[@"Program 1",@"Program 2"];
+   
+    
+    [self getData];
+    
+//    [[_ref child:@"Programs"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
 //
-//        }
-        
-        
-    }];
-    
-    
-    getTitle = [NSMutableArray arrayWithArray:@[@"Program 1",@"Program 2"]];
-    getDuration = [NSMutableArray arrayWithArray:@[@"3Days/Week",@"4Days/Week"]];
-
-    title = [[NSMutableArray alloc] initWithArray:getTitle];
-    duration = [[NSMutableArray alloc] initWithArray:getDuration];
+//        __block NSMutableArray *tempTitle;
+//
+//        NSDictionary *dict = snapshot.value;
+//        NSArray *allValue = [dict allValues];
+//        NSArray *programTitle = [allValue valueForKey:@"name"];
+//        id programDuration = [allValue valueForKey:@"duration"];
+//        NSLog(@"ALL VALUE%@", allValue);
+//        NSLog(@"NAme %@", programTitle);
+//        NSLog(@"Type %@", [programTitle class]);
+//
+//        tempTitle = [programTitle mutableCopy];
+//
+////    }];
+//
+//    getTitle = [NSMutableArray arrayWithArray:test];
+//    getDuration = [NSMutableArray arrayWithArray:@[@"3Days/Week",@"4Days/Week"]];
+//
+////
+//    title = [[NSMutableArray alloc] initWithArray:getTitle];
+//    duration = [[NSMutableArray alloc] initWithArray:getDuration];
+//    NSLog(@"Duration %@", [duration class]);
+//
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewProgram:)];
     
     
     [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
+    
+}
+
+-(void) getData {
+    _ref = [[FIRDatabase database] reference];
+    
+    [[_ref child:@"Programs"] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            NSDictionary *dict = snapshot.value;
+            NSArray *allValue = [dict allValues];
+        self->programTitle = [allValue valueForKey:@"name"];
+        self->programDuration = [allValue valueForKey:@"duration"];
+        
+//        NSLog(@"NAme %@", self->programTitle);
+        
+        [self showData];
+    }];
+}
+
+-(void) showData {
+    
+    getTitle = [NSMutableArray arrayWithArray:programTitle];
+    getDuration = [NSMutableArray arrayWithArray:programDuration];
+//    NSLog(@"Show data %@", getTitle);
+    
+    //    getTitle = [NSMutableArray arrayWithArray:test];
+    //    getDuration = [NSMutableArray arrayWithArray:@[@"3Days/Week",@"4Days/Week"]];
+    
+    title = [[NSMutableArray alloc] initWithArray:getTitle];
+    duration = [[NSMutableArray alloc] initWithArray:getDuration];
+    
+    NSLog(@"Type of title %@", [title class]);
+    
+    [self.tableView reloadData];
+    
     
 }
 
@@ -87,8 +130,10 @@
                                  titleInput.text, @"name",
                                  durationInput.text, @"duration",
                                  nil];
+        //Root node
         FIRDatabaseReference *programReference = [self.ref child: @"Programs"];
         
+        //Random ID for each child node of Programs
         FIRDatabaseReference *newProgramReference = [programReference childByAutoId];
         
         [newProgramReference setValue: program];

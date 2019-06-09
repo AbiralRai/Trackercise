@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
     NSMutableArray *title;
     NSMutableArray *duration;
     
+    __block NSArray *programTitle;
+    __block NSArray *programDuration;
+    
+    
     
 }
 

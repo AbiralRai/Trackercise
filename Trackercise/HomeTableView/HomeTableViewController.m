@@ -1,7 +1,7 @@
 
 #import "HomeTableViewController.h"
 #import "HomeTableViewCell.h"
-#import "DetailViewController.h"
+#import "NotesListTableViewController.h"
 #import "Plist.h"
 
 @interface HomeTableViewController () <UIAlertViewDelegate>
@@ -80,21 +80,25 @@
         UITextField *titleInput = textfields[0];
         UITextField *durationInput = textfields[1];
         
+        
         NSDictionary *program = [NSDictionary dictionaryWithObjectsAndKeys:
                                  titleInput.text, @"name",
                                  durationInput.text, @"duration",
                                  nil];
+        
         //Root node
         FIRDatabaseReference *programReference = [self.ref child: @"Programs"];
-        
+
         //Random ID for each child node of Programs
         FIRDatabaseReference *newProgramReference = [programReference childByAutoId];
-        
+
+
         [newProgramReference setValue: program];
         
         
         [self->title addObject:titleInput.text];
         [self->duration addObject:durationInput.text];
+        
         [self.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self->title.count - 1 inSection:0]] withRowAnimation:UITableViewRowAnimationAutomatic];
         
     }];
@@ -121,8 +125,6 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    
     
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"homeCell" forIndexPath:indexPath];
     
@@ -154,11 +156,14 @@
      [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
      
      
+//     NSInteger index =(long)indexPath.row;
+     
+//     NSString *strIndex = [NSString stringWithFormat:@"%ld",index];
+//     [[[_ref child:@"Programs"]child:strIndex] removeValue];
      
      
- } 
  }
-
+ }
 /*
  // Override to support rearranging the table view.
  - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
@@ -177,20 +182,20 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        
-        DetailViewController *detailView = [segue destinationViewController];
-        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
-        
-        int row = (int)[myIndexPath row];
-        detailView.detailModal = @[title[row], duration[row]];
-        
-    }
-    
-    
-}
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//
+//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+//
+//        NotesListTableViewController *detailView = [segue destinationViewController];
+//        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+//
+//        int row = (int)[myIndexPath row];
+//        detailView.detailModal = @[title[row], duration[row]];
+//
+//    }
+//
+//
+//}
 
 
 @end

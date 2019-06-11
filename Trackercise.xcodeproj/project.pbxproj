@@ -32,7 +32,6 @@
 		D228EDE6228ED9FB0058BC65 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D228EDDF228ED9FB0058BC65 /* TAAbstractDotView.m */; };
 		D24C5FCF2288F7E200BECD1E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D24C5FCE2288F7E200BECD1E /* HomeTableViewCell.m */; };
 		D24C5FD22288F7F600BECD1E /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24C5FD12288F7F600BECD1E /* HomeTableViewController.m */; };
-		D2566384228A3EAC00EB0810 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2566383228A3EAC00EB0810 /* DetailViewController.m */; };
 		D2CB0DA0227B08B8004E097F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB0D9F227B08B8004E097F /* AppDelegate.m */; };
 		D2CB0DA6227B08B9004E097F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB0DA4227B08B9004E097F /* Main.storyboard */; };
 		D2CB0DAB227B08BB004E097F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB0DA9227B08BB004E097F /* LaunchScreen.storyboard */; };
@@ -43,6 +42,10 @@
 		D2D2346622A9E5090034302E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2346522A9E5090034302E /* SDWebImage.framework */; };
 		D2D2346A22AA0AC40034302E /* Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D2346922AA0AC40034302E /* Plist.m */; };
 		D2D2346E22AA1A9D0034302E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */; };
+		D2D234BB22AE61680034302E /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234BA22AE61680034302E /* Note.m */; };
+		D2D234BD22AE69280034302E /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2D234BC22AE69280034302E /* file.txt */; };
+		D2D234C222AF11060034302E /* NotesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234BE22AF11050034302E /* NotesListTableViewController.m */; };
+		D2D234C322AF11060034302E /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234C022AF11060034302E /* NoteDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,8 +121,6 @@
 		D24C5FCE2288F7E200BECD1E /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		D24C5FD02288F7F600BECD1E /* HomeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		D24C5FD12288F7F600BECD1E /* HomeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
-		D2566382228A3EAC00EB0810 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D2566383228A3EAC00EB0810 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D2CB0D9B227B08B8004E097F /* Trackercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CB0D9E227B08B8004E097F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2CB0D9F227B08B8004E097F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +139,13 @@
 		D2D2346822AA0AC40034302E /* Plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Plist.h; sourceTree = "<group>"; };
 		D2D2346922AA0AC40034302E /* Plist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Plist.m; sourceTree = "<group>"; };
 		D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D2D234B922AE61680034302E /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		D2D234BA22AE61680034302E /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		D2D234BC22AE69280034302E /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
+		D2D234BE22AF11050034302E /* NotesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesListTableViewController.m; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NotesListTableViewController.m"; sourceTree = "<group>"; };
+		D2D234BF22AF11050034302E /* NotesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesListTableViewController.h; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NotesListTableViewController.h"; sourceTree = "<group>"; };
+		D2D234C022AF11060034302E /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDetailViewController.m; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.m"; sourceTree = "<group>"; };
+		D2D234C122AF11060034302E /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDetailViewController.h; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,14 +276,17 @@
 		D2566385228C0E7200EB0810 /* HomeTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D2566382228A3EAC00EB0810 /* DetailViewController.h */,
-				D2566383228A3EAC00EB0810 /* DetailViewController.m */,
+				D2D234C122AF11060034302E /* NoteDetailViewController.h */,
+				D2D234C022AF11060034302E /* NoteDetailViewController.m */,
+				D2D234BF22AF11050034302E /* NotesListTableViewController.h */,
+				D2D234BE22AF11050034302E /* NotesListTableViewController.m */,
 				D24C5FD02288F7F600BECD1E /* HomeTableViewController.h */,
 				D24C5FD12288F7F600BECD1E /* HomeTableViewController.m */,
 				D24C5FCD2288F7E200BECD1E /* HomeTableViewCell.h */,
 				D24C5FCE2288F7E200BECD1E /* HomeTableViewCell.m */,
 				D2D2346822AA0AC40034302E /* Plist.h */,
 				D2D2346922AA0AC40034302E /* Plist.m */,
+				D2D234BC22AE69280034302E /* file.txt */,
 			);
 			path = HomeTableView;
 			sourceTree = "<group>";
@@ -320,6 +331,8 @@
 				D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */,
 				D2CB0DAD227B08BB004E097F /* main.m */,
 				D228ED70228D87160058BC65 /* Charts.xcodeproj */,
+				D2D234B922AE61680034302E /* Note.h */,
+				D2D234BA22AE61680034302E /* Note.m */,
 			);
 			path = Trackercise;
 			sourceTree = "<group>";
@@ -474,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D234BD22AE69280034302E /* file.txt in Resources */,
 				D228EDD1228ED9E40058BC65 /* dotActive@2x.png in Resources */,
 				D228EDCF228ED9E40058BC65 /* dotInactive@2x.png in Resources */,
 				D228EDD2228ED9E40058BC65 /* dotInactive@3x.png in Resources */,
@@ -639,17 +653,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2566384228A3EAC00EB0810 /* DetailViewController.m in Sources */,
 				D228EDE3228ED9FB0058BC65 /* TADotView.m in Sources */,
 				D228ECB4228CEAB60058BC65 /* ProgressViewController.m in Sources */,
 				D228ED6F228D5B170058BC65 /* CalViewController.m in Sources */,
 				D2CB0DAE227B08BB004E097F /* main.m in Sources */,
+				D2D234C222AF11060034302E /* NotesListTableViewController.m in Sources */,
+				D2D234BB22AE61680034302E /* Note.m in Sources */,
 				D228EDE4228ED9FB0058BC65 /* TAPageControl.m in Sources */,
 				D228EDE5228ED9FB0058BC65 /* TAAnimatedDotView.m in Sources */,
 				D228EDE6228ED9FB0058BC65 /* TAAbstractDotView.m in Sources */,
 				D24C5FCF2288F7E200BECD1E /* HomeTableViewCell.m in Sources */,
 				D2CB0DA0227B08B8004E097F /* AppDelegate.m in Sources */,
 				D24C5FD22288F7F600BECD1E /* HomeTableViewController.m in Sources */,
+				D2D234C322AF11060034302E /* NoteDetailViewController.m in Sources */,
 				D228ECBA228CF5790058BC65 /* TutorialViewController.m in Sources */,
 				D2D2346A22AA0AC40034302E /* Plist.m in Sources */,
 			);

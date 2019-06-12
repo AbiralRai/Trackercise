@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
+@import Firebase;
+@import FirebaseStorage;
 
-@interface ProgressViewController : UIViewController{
+@interface ProgressViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>{
     
     int imageInt;
+    Boolean add;
+    
     
     
 }
@@ -24,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
+- (IBAction)add:(id)sender;
 
 
 @end

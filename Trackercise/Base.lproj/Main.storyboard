@@ -333,70 +333,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuz-NA-Wxc">
-                                <rect key="frame" x="0.0" y="56" width="375" height="541"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cfX-yM-2A2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="mw6-cy-8AG" id="E9c-SU-wzD"/>
-                                </connections>
-                            </searchBar>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="GOf-Bb-JNC">
                                 <rect key="frame" x="169" y="343.66666666666669" width="37" height="37"/>
                                 <color key="color" red="1" green="0.36275070990000002" blue="0.348192528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLq-SD-duJ">
-                                <rect key="frame" x="0.0" y="597" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="stop" id="Ls8-Q2-kpE">
-                                        <connections>
-                                            <action selector="stopLoading" destination="tuz-NA-Wxc" id="fax-ge-PXm"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem systemItem="refresh" id="kwz-xb-LRQ">
-                                        <connections>
-                                            <action selector="reload" destination="tuz-NA-Wxc" id="C8z-fi-qLb"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zdu-lL-E9a"/>
-                                    <barButtonItem systemItem="rewind" id="Req-VP-Q68">
-                                        <connections>
-                                            <action selector="goBack" destination="tuz-NA-Wxc" id="dpQ-2d-ete"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem systemItem="fastForward" id="5NH-80-0Le">
-                                        <connections>
-                                            <action selector="goForward" destination="tuz-NA-Wxc" id="M62-9R-XS5"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GOf-Bb-JNC" firstAttribute="centerX" secondItem="B2Q-nd-1vy" secondAttribute="centerX" id="2DX-e9-sHO"/>
-                            <constraint firstItem="CLq-SD-duJ" firstAttribute="trailing" secondItem="B2Q-nd-1vy" secondAttribute="trailing" id="3Xf-jp-Mz3"/>
                             <constraint firstItem="GOf-Bb-JNC" firstAttribute="centerY" secondItem="jGV-qB-TTz" secondAttribute="centerY" id="4au-sE-Hex"/>
-                            <constraint firstItem="CLq-SD-duJ" firstAttribute="top" secondItem="tuz-NA-Wxc" secondAttribute="bottom" id="5tV-aw-Ao0"/>
-                            <constraint firstItem="tuz-NA-Wxc" firstAttribute="trailing" secondItem="B2Q-nd-1vy" secondAttribute="trailing" id="KBB-2x-Gez"/>
-                            <constraint firstItem="B2Q-nd-1vy" firstAttribute="trailing" secondItem="cfX-yM-2A2" secondAttribute="trailing" id="MsL-K4-Nv1"/>
-                            <constraint firstItem="cfX-yM-2A2" firstAttribute="leading" secondItem="B2Q-nd-1vy" secondAttribute="leading" id="PfL-Ea-AYt"/>
-                            <constraint firstItem="tuz-NA-Wxc" firstAttribute="leading" secondItem="B2Q-nd-1vy" secondAttribute="leading" id="V0k-6v-nBf"/>
-                            <constraint firstItem="tuz-NA-Wxc" firstAttribute="top" secondItem="cfX-yM-2A2" secondAttribute="bottom" id="Yf8-us-Gv2"/>
-                            <constraint firstItem="cfX-yM-2A2" firstAttribute="top" secondItem="jGV-qB-TTz" secondAttribute="top" id="rKN-l5-H5c"/>
-                            <constraint firstItem="B2Q-nd-1vy" firstAttribute="bottom" secondItem="CLq-SD-duJ" secondAttribute="bottom" id="vNo-8w-nxZ"/>
-                            <constraint firstItem="CLq-SD-duJ" firstAttribute="leading" secondItem="B2Q-nd-1vy" secondAttribute="leading" id="yVf-w7-ZTh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B2Q-nd-1vy"/>
                     </view>
                     <navigationItem key="navigationItem" title="TRACKERISE" id="PXk-Ik-vDT"/>
                     <connections>
                         <outlet property="actInd" destination="GOf-Bb-JNC" id="Ish-Ro-N3C"/>
-                        <outlet property="searchBar" destination="cfX-yM-2A2" id="OPY-jv-cQH"/>
-                        <outlet property="webView" destination="tuz-NA-Wxc" id="heq-xi-16b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nQ-KU-Hgn" sceneMemberID="firstResponder"/>

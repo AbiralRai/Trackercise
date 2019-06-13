@@ -7,21 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TutorialViewController : UIViewController <UISearchBarDelegate> {
     
     NSTimer *timer;
+    UIActivityIndicatorView *spinner;
     
 }
 
-
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property(strong,nonatomic) WKWebView *webView;
+@property (strong, nonatomic) NSString *productURL;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *actInd;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-
 
 @end
 

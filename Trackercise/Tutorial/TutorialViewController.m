@@ -14,39 +14,42 @@
 
 @implementation TutorialViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.youtube.com/playlist?list=PL_UAXxDwtUkEexoG8TO-WXjJlfD8ScnwW"]]];
+    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:CGPointMake(160,124)];
+    [self.view addSubview:spinner];
+    spinner.tag = 100;
+    [spinner startAnimating];
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/2.0 target:self selector:@selector(loading) userInfo:nil repeats:YES];
+    self.productURL = @"https://www.youtube.com/playlist?list=PL_UAXxDwtUkEexoG8TO-WXjJlfD8ScnwW";
+    
+    NSURL *url = [NSURL URLWithString:self.productURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    _webView = [[WKWebView alloc] initWithFrame:self.view.frame];
+    [_webView loadRequest:request];
+    _webView.frame = CGRectMake(self.view.frame.origin.x,self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+    
+    
+    _webView.userInteractionEnabled = true;
+    _webView.allowsBackForwardNavigationGestures = true;
+    
+    [self.view addSubview:_webView];
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
+    
+    [spinner stopAnimating];
     
 }
 
--(void)loading {
-    
-    if (self.webView.loading) {
-        
-        [self.actInd startAnimating];
-        
-    } else {
-        
-        [self.actInd stopAnimating];
-        
-    }
-    
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
-
-
--(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@", self.searchBar.text]]]];
-    
-    [self resignFirstResponder];
-    
-}
-
 
 /*
 #pragma mark - Navigation

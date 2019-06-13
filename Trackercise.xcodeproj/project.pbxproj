@@ -39,7 +39,6 @@
 		D2CB0DB8227B08BB004E097F /* TrackerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB0DB7227B08BB004E097F /* TrackerciseTests.m */; };
 		D2CB0DC3227B08BB004E097F /* TrackerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB0DC2227B08BB004E097F /* TrackerciseUITests.m */; };
 		D2D2346222A9E4F60034302E /* FSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2346122A9E4F60034302E /* FSCalendar.framework */; };
-		D2D2346622A9E5090034302E /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2346522A9E5090034302E /* SDWebImage.framework */; };
 		D2D2346A22AA0AC40034302E /* Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D2346922AA0AC40034302E /* Plist.m */; };
 		D2D2346E22AA1A9D0034302E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */; };
 		D2D234BB22AE61680034302E /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234BA22AE61680034302E /* Note.m */; };
@@ -79,14 +78,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A63D728529F6DEADB24F512 /* Pods-TrackerciseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerciseUITests/Pods-TrackerciseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		126E2DE533BE457A8E69835A /* Pods_Trackercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trackercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		129895DCCF7BBE4A73156167 /* Pods-TrackerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerciseTests/Pods-TrackerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B506EEC621A17FA0087681A /* Pods-Trackercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trackercise/Pods-Trackercise.debug.xcconfig"; sourceTree = "<group>"; };
+		4584DAAC2B0708D4FCDE7A2B /* Pods-Trackercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trackercise/Pods-Trackercise.release.xcconfig"; sourceTree = "<group>"; };
 		6880E1FBE0423C6115F5488C /* Pods-Trackercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackercise.debug.xcconfig"; path = "Target Support Files/Pods-Trackercise/Pods-Trackercise.debug.xcconfig"; sourceTree = "<group>"; };
 		73A661EF46A8E83B7E6E3D8D /* Pods-TrackerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseTests.release.xcconfig"; path = "Target Support Files/Pods-TrackerciseTests/Pods-TrackerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 		74FA1125E2E83F2E03CA4C98 /* Pods_TrackerciseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackerciseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A0BB10790331F9443297515 /* Pods_TrackerciseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackerciseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88259E4B20A2CBB572679581 /* Pods-TrackerciseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseUITests.debug.xcconfig"; path = "Target Support Files/Pods-TrackerciseUITests/Pods-TrackerciseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BCA4A64E6844ABCEDA489AE /* Pods-Trackercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackercise.release.xcconfig"; path = "Target Support Files/Pods-Trackercise/Pods-Trackercise.release.xcconfig"; sourceTree = "<group>"; };
+		9EC7693488FE16DA027DEA84 /* Pods-TrackerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerciseUITests/Pods-TrackerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE9B1302AF0E0B78D3CEE07E /* Pods-TrackerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerciseTests/Pods-TrackerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C793695D44AF9A4FFCD6644F /* Pods-TrackerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseUITests.release.xcconfig"; path = "Target Support Files/Pods-TrackerciseUITests/Pods-TrackerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D228ECAA228CDF8D0058BC65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D228ECB2228CEAB60058BC65 /* ProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		D2D234C022AF11060034302E /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDetailViewController.m; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.m"; sourceTree = "<group>"; };
 		D2D234C122AF11060034302E /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDetailViewController.h; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.h"; sourceTree = "<group>"; };
 		D2D2354C22B08C990034302E /* Trackercise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trackercise.entitlements; sourceTree = "<group>"; };
+		DBAEBF844EA9633893C01C9F /* Pods-TrackerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackerciseTests/Pods-TrackerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +157,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D2346622A9E5090034302E /* SDWebImage.framework in Frameworks */,
 				D2D2346222A9E4F60034302E /* FSCalendar.framework in Frameworks */,
 				591C3F0AE53724ABD4B27080 /* Pods_Trackercise.framework in Frameworks */,
 			);
@@ -198,6 +202,12 @@
 				73A661EF46A8E83B7E6E3D8D /* Pods-TrackerciseTests.release.xcconfig */,
 				88259E4B20A2CBB572679581 /* Pods-TrackerciseUITests.debug.xcconfig */,
 				C793695D44AF9A4FFCD6644F /* Pods-TrackerciseUITests.release.xcconfig */,
+				1B506EEC621A17FA0087681A /* Pods-Trackercise.debug.xcconfig */,
+				4584DAAC2B0708D4FCDE7A2B /* Pods-Trackercise.release.xcconfig */,
+				BE9B1302AF0E0B78D3CEE07E /* Pods-TrackerciseTests.debug.xcconfig */,
+				DBAEBF844EA9633893C01C9F /* Pods-TrackerciseTests.release.xcconfig */,
+				0A63D728529F6DEADB24F512 /* Pods-TrackerciseUITests.debug.xcconfig */,
+				9EC7693488FE16DA027DEA84 /* Pods-TrackerciseUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -365,7 +375,6 @@
 				D2CB0D97227B08B8004E097F /* Sources */,
 				D2CB0D98227B08B8004E097F /* Frameworks */,
 				D2CB0D99227B08B8004E097F /* Resources */,
-				ABC08526D6A0852EB2D9F7AA /* [CP] Copy Pods Resources */,
 				D04EBB9366FA45157410E637 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -593,28 +602,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABC08526D6A0852EB2D9F7AA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Trackercise/Pods-Trackercise-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trackercise/Pods-Trackercise-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D04EBB9366FA45157410E637 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -624,12 +611,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Trackercise/Pods-Trackercise-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -637,12 +621,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -888,6 +869,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFVQ9N7C68;
 				INFOPLIST_FILE = TrackerciseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -907,6 +889,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFVQ9N7C68;
 				INFOPLIST_FILE = TrackerciseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -925,6 +908,7 @@
 			baseConfigurationReference = 88259E4B20A2CBB572679581 /* Pods-TrackerciseUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFVQ9N7C68;
 				INFOPLIST_FILE = TrackerciseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -943,6 +927,7 @@
 			baseConfigurationReference = C793695D44AF9A4FFCD6644F /* Pods-TrackerciseUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SFVQ9N7C68;
 				INFOPLIST_FILE = TrackerciseUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

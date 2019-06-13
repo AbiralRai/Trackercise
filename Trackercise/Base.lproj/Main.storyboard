@@ -149,22 +149,6 @@
             </objects>
             <point key="canvasLocation" x="180" y="927"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="drU-SS-qpE">
-            <objects>
-                <viewController id="G8R-D0-IIp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ntY-p5-Rd8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Gbv-je-Oht"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="p0g-dO-5cw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sig-bx-oc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="174" y="1685"/>
-        </scene>
         <!--Calender-->
         <scene sceneID="Vu0-2O-I2M">
             <objects>
@@ -477,21 +461,21 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="57"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="74"/>
                             </constraint>
-                            <constraint firstItem="Qb1-H6-mai" firstAttribute="trailing" secondItem="Vp3-QA-Dye" secondAttribute="trailing" id="9a2-jS-okK"/>
+                            <constraint firstItem="Qb1-H6-mai" firstAttribute="trailing" secondItem="lfd-0K-oh3" secondAttribute="trailing" constant="-16" id="9a2-jS-okK"/>
                             <constraint firstItem="Vp3-QA-Dye" firstAttribute="top" secondItem="Qb1-H6-mai" secondAttribute="bottom" constant="11" id="FYY-wq-SV0">
                                 <variation key="heightClass=compact-widthClass=compact" constant="8"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="3"/>
                             </constraint>
                             <constraint firstItem="Vp3-QA-Dye" firstAttribute="top" secondItem="Qb1-H6-mai" secondAttribute="bottom" constant="8" symbolic="YES" id="G0k-7Q-WiV"/>
                             <constraint firstItem="Qb1-H6-mai" firstAttribute="top" secondItem="wL5-qr-C63" secondAttribute="top" constant="8" id="KOl-JS-hJv"/>
-                            <constraint firstItem="Qb1-H6-mai" firstAttribute="top" secondItem="dfA-P9-XaJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QhL-V6-A8P"/>
+                            <constraint firstItem="Qb1-H6-mai" firstAttribute="top" secondItem="lfd-0K-oh3" secondAttribute="top" constant="8" id="QhL-V6-A8P"/>
                             <constraint firstItem="Qb1-H6-mai" firstAttribute="leading" secondItem="wL5-qr-C63" secondAttribute="leadingMargin" id="RRS-iU-oEJ"/>
                             <constraint firstItem="Vp3-QA-Dye" firstAttribute="leading" secondItem="wL5-qr-C63" secondAttribute="leadingMargin" id="Xhy-yx-q2c"/>
                             <constraint firstItem="Qb1-H6-mai" firstAttribute="trailing" secondItem="wL5-qr-C63" secondAttribute="trailingMargin" id="b09-Z1-mne"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vp3-QA-Dye" secondAttribute="trailing" id="jKf-1Y-NRv"/>
                             <constraint firstItem="Qb1-H6-mai" firstAttribute="leading" secondItem="Vp3-QA-Dye" secondAttribute="leading" id="o0r-Zt-kqX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JN1-Xe-O0c"/>
+                        <viewLayoutGuide key="safeArea" id="lfd-0K-oh3"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="9a2-jS-okK"/>
@@ -584,13 +568,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Heading" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDH-hM-f0X">
-                                <rect key="frame" x="16" y="20" width="568" height="32"/>
+                                <rect key="frame" x="8" y="20" width="351" height="32"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1c-fR-h60">
-                                <rect key="frame" x="16" y="60" width="568" height="537"/>
+                                <rect key="frame" x="8" y="60" width="359" height="537"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="safeArea" id="6Kz-Dh-a68"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -598,15 +583,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="l1c-fR-h60" firstAttribute="top" secondItem="HDH-hM-f0X" secondAttribute="bottom" constant="8" id="0pK-1R-l7K"/>
-                            <constraint firstItem="HDH-hM-f0X" firstAttribute="trailing" secondItem="CWh-LR-ehb" secondAttribute="trailingMargin" constant="225" id="6JD-oY-TX3"/>
-                            <constraint firstItem="HDH-hM-f0X" firstAttribute="leading" secondItem="CWh-LR-ehb" secondAttribute="leadingMargin" id="EqI-Sg-3Lf"/>
-                            <constraint firstItem="l1c-fR-h60" firstAttribute="trailing" secondItem="CWh-LR-ehb" secondAttribute="trailingMargin" constant="225" id="KUk-b9-knk"/>
-                            <constraint firstItem="HDH-hM-f0X" firstAttribute="top" secondItem="G8P-hq-IkC" secondAttribute="bottom" constant="20" id="R3Z-nU-AU5"/>
-                            <constraint firstItem="3La-Fk-wpD" firstAttribute="top" secondItem="l1c-fR-h60" secondAttribute="bottom" id="Wrj-vM-7xJ"/>
-                            <constraint firstItem="l1c-fR-h60" firstAttribute="leading" secondItem="CWh-LR-ehb" secondAttribute="leadingMargin" id="d1d-Rt-KvB"/>
+                            <constraint firstItem="HDH-hM-f0X" firstAttribute="leading" secondItem="l1c-fR-h60" secondAttribute="leading" id="5ps-ey-cRc"/>
+                            <constraint firstItem="zR9-Gx-f0M" firstAttribute="bottom" secondItem="l1c-fR-h60" secondAttribute="bottom" constant="8" symbolic="YES" id="GMI-GH-BPZ"/>
+                            <constraint firstItem="HDH-hM-f0X" firstAttribute="top" secondItem="CWh-LR-ehb" secondAttribute="top" constant="20" symbolic="YES" id="HJg-ap-0u8"/>
+                            <constraint firstItem="HDH-hM-f0X" firstAttribute="leading" secondItem="CWh-LR-ehb" secondAttribute="leadingMargin" constant="-8" id="bo1-LY-U9k"/>
+                            <constraint firstItem="HDH-hM-f0X" firstAttribute="trailing" secondItem="CWh-LR-ehb" secondAttribute="trailingMargin" id="euX-tX-mre"/>
+                            <constraint firstItem="l1c-fR-h60" firstAttribute="top" secondItem="HDH-hM-f0X" secondAttribute="bottom" constant="8" symbolic="YES" id="f0S-Jw-GDf"/>
+                            <constraint firstItem="l1c-fR-h60" firstAttribute="centerX" secondItem="CWh-LR-ehb" secondAttribute="centerX" id="uby-kP-bwa"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="1mf-Xz-0Lp"/>
+                        <viewLayoutGuide key="safeArea" id="zR9-Gx-f0M"/>
                     </view>
                     <connections>
                         <outlet property="contentTextView" destination="l1c-fR-h60" id="u7C-B2-dAa"/>

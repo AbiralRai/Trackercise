@@ -14,9 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CalViewController : UIViewController 
 @property (weak , nonatomic) FSCalendar *calendar;
-//@property (readonly, nonatomic) NSCalendar *calendar;
-
-//@property (strong, nonatomic) IBInspectable UIColor *todayColor;
 @property (weak, nonatomic) IBOutlet UIView *calView;
 
 @end

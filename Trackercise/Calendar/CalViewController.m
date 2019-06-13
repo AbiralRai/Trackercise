@@ -16,22 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    UIView *view = [[UIView alloc] init];
-//    view.backgroundColor = [UIColor groupTableViewBackgroundColor];
-//    self.view = view;
-    
-//    FSCalendar *calendar = [[FSCalendar alloc] init];
-//    calendar.dataSource = self;
-//    calendar.delegate = self;
-//    [self.calView addSubview:calendar];
-//    self.calendar = calendar;
-//
-//    _calendar.appearance.todayColor = [UIColor colorWithRed:52.0/255.0 green:168.0/255.0 blue:83.0/255.0 alpha:1.0];
-//     _calendar.appearance.weekdayTextColor = [UIColor blackColor];
-//    _calendar.appearance.headerTitleColor = [UIColor blackColor];
-//    _calendar.appearance.titleFont = [UIFont systemFontOfSize:18];
-    
+
 }
 
 

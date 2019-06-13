@@ -154,14 +154,6 @@
  // Delete the row from the data source
      [title removeObjectAtIndex:indexPath.row];
      [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-     
-     
-//     NSInteger index =(long)indexPath.row;
-     
-//     NSString *strIndex = [NSString stringWithFormat:@"%ld",index];
-//     [[[_ref child:@"Programs"]child:strIndex] removeValue];
-     
-     
  }
  }
 /*

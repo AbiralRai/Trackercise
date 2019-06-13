@@ -142,12 +142,28 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <outlet property="delegate" destination="sma-yx-tgj" id="d5s-Q2-39Q"/>
-                        <segue destination="d7r-i8-TVJ" kind="relationship" relationship="rootViewController" id="3NP-uw-aLM"/>
+                        <segue destination="d7r-i8-TVJ" kind="relationship" relationship="rootViewController" id="3bn-r2-Bas"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dD7-Lo-x5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="180" y="927"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="drU-SS-qpE">
+            <objects>
+                <viewController id="G8R-D0-IIp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntY-p5-Rd8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gbv-je-Oht"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p0g-dO-5cw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sig-bx-oc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="1685"/>
         </scene>
         <!--Calender-->
         <scene sceneID="Vu0-2O-I2M">
@@ -497,7 +513,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="TRACKERISE" id="zWJ-Kp-LWx"/>
+                    <navigationItem key="navigationItem" title="TRACKERISE" id="zWJ-Kp-LWx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7Vr-4h-S1Z">
+                            <connections>
+                                <action selector="add:" destination="d7r-i8-TVJ" id="gQ7-9Y-4O4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="JfZ-vv-hTY" id="t1N-fG-FTD"/>
                         <outlet property="imageView" destination="Qb1-H6-mai" id="kvT-X4-OAr"/>

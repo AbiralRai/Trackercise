@@ -12,6 +12,7 @@ target 'Trackercise' do
   pod "MWPhotoBrowser"
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'TrackerciseTests' do
     inherit! :search_paths

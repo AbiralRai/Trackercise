@@ -43,7 +43,6 @@
 		D2D2346A22AA0AC40034302E /* Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D2346922AA0AC40034302E /* Plist.m */; };
 		D2D2346E22AA1A9D0034302E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */; };
 		D2D234BB22AE61680034302E /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234BA22AE61680034302E /* Note.m */; };
-		D2D234BD22AE69280034302E /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = D2D234BC22AE69280034302E /* file.txt */; };
 		D2D234C222AF11060034302E /* NotesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234BE22AF11050034302E /* NotesListTableViewController.m */; };
 		D2D234C322AF11060034302E /* NoteDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D234C022AF11060034302E /* NoteDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -141,11 +140,11 @@
 		D2D2346D22AA1A9D0034302E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D2D234B922AE61680034302E /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		D2D234BA22AE61680034302E /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
-		D2D234BC22AE69280034302E /* file.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 		D2D234BE22AF11050034302E /* NotesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesListTableViewController.m; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NotesListTableViewController.m"; sourceTree = "<group>"; };
 		D2D234BF22AF11050034302E /* NotesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesListTableViewController.h; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NotesListTableViewController.h"; sourceTree = "<group>"; };
 		D2D234C022AF11060034302E /* NoteDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteDetailViewController.m; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.m"; sourceTree = "<group>"; };
 		D2D234C122AF11060034302E /* NoteDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteDetailViewController.h; path = "../../../../../Downloads/iOS8-Notes-master 2/Notes/NoteDetailViewController.h"; sourceTree = "<group>"; };
+		D2D2354C22B08C990034302E /* Trackercise.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trackercise.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,7 +285,6 @@
 				D24C5FCE2288F7E200BECD1E /* HomeTableViewCell.m */,
 				D2D2346822AA0AC40034302E /* Plist.h */,
 				D2D2346922AA0AC40034302E /* Plist.m */,
-				D2D234BC22AE69280034302E /* file.txt */,
 			);
 			path = HomeTableView;
 			sourceTree = "<group>";
@@ -318,6 +316,7 @@
 		D2CB0D9D227B08B8004E097F /* Trackercise */ = {
 			isa = PBXGroup;
 			children = (
+				D2D2354C22B08C990034302E /* Trackercise.entitlements */,
 				D2CB0D9E227B08B8004E097F /* AppDelegate.h */,
 				D2CB0D9F227B08B8004E097F /* AppDelegate.m */,
 				D2566385228C0E7200EB0810 /* HomeTableView */,
@@ -428,6 +427,11 @@
 					D2CB0D9A227B08B8004E097F = {
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					D2CB0DB2227B08BB004E097F = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -487,7 +491,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D234BD22AE69280034302E /* file.txt in Resources */,
 				D228EDD1228ED9E40058BC65 /* dotActive@2x.png in Resources */,
 				D228EDCF228ED9E40058BC65 /* dotInactive@2x.png in Resources */,
 				D228EDD2228ED9E40058BC65 /* dotInactive@3x.png in Resources */,
@@ -623,6 +626,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Trackercise/Pods-Trackercise-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DACircularProgress/DACircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -635,6 +639,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DACircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
